@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+    <!--
+  * Please see the included README.md file for license terms and conditions.
+  -->
+
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="jqm/jquery.mobile-min.css">
+        <title>Blank App Designer Cordova Web App Project Template</title>
+        <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+
+        <!--
+  * The "meta viewport" tag (below) helps your app size appropriately to a device's ideal viewport.
+  * Note that Windows device viewports work better when initialized using the @viewport CSS rule.
+  * For a quick overview of "meta viewport" and @viewport, see this article:
+  *   http://webdesign.tutsplus.com/tutorials/htmlcss-tutorials/quick-tip-dont-forget-the-viewport-meta-tag
+  * To see how it works, try your app on a real device with and without a "meta viewport" tag.
+  * Additional useful references include:
+  *   http://www.quirksmode.org/mobile/viewports.html
+  *   http://www.quirksmode.org/mobile/metaviewport/devices.html
+  *   https://developer.apple.com/library/safari/documentation/AppleApplications/Reference/SafariHTMLRef/Articles/MetaTags.html
+-->
+
+        <!-- <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1"> -->
+        <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, user-scalable=no">
+        <!-- <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes, minimum-scale=1, maximum-scale=2"> -->
+
+        <style>
+            /* following three (cascaded) are equivalent to above three meta viewport statements */
+            /* see http://www.quirksmode.org/blog/archives/2014/05/html5_dev_conf.html */
+            /* see http://dev.w3.org/csswg/css-device-adapt/ */
+                @-ms-viewport { width: 100vw ; min-zoom: 100% ; zoom: 100% ; }          @viewport { width: 100vw ; min-zoom: 100% zoom: 100% ; }
+                @-ms-viewport { user-zoom: fixed ; min-zoom: 100% ; }                   @viewport { user-zoom: fixed ; min-zoom: 100% ; }
+                /*@-ms-viewport { user-zoom: zoom ; min-zoom: 100% ; max-zoom: 200% ; }   @viewport { user-zoom: zoom ; min-zoom: 100% ; max-zoom: 200% ; }*/
+        </style>
+
+        <link rel="stylesheet" href="css/app.css">
+        <link rel="stylesheet" href="bower_components/Materialize/bin/materialize.css">
+        <link rel="stylesheet" type="text/css" href="css/index_main.less.css" class="main-less">
+        <link rel="stylesheet" type="text/css" href="bower_components/material-design-icons-iconfont/dist/material-design-icons.css">
+        
+
+        <!-- IMPORTANT: Do not include a weinre script tag as part of your release builds! -->
+        <!-- Place your remote debugging (weinre) script URL from the Test tab here, if it does not work below -->
+        <!-- <script src="http://debug-software.intel.com/target/target-script-min.js#insertabiglongfunkynumberfromthexdkstesttab"></script> -->
+
+        <!-- Recommended location for your JavaScript libraries -->
+        <!-- These library references (below) are just examples to give you the general idea... -->
+        <!-- <script src="lib/mc/hammer.js"></script> -->
+        <!-- <script src="lib/ft/fastclick.js"></script> -->
+
+        <!--
+  * cordova.js is a phantom lib for "Cordova HTML5 web app," it does nothing in a "Standard HTML5 web app"
+  * Seeing a "Failed to load resource: net::ERR_FILE_NOT_FOUND" message caused by this "cordova.js" script?
+  * The cordova.js script is required if you convert your "Standard HTML5" project into a "Cordova" project.
+  * You can safely ignore the error or comment out this line if you will not be developing a Cordova app.
+-->
+        <script src="cordova.js" id="xdkJScordova_"></script>
+
+
+        <!-- for your event code, see README and file comments for details -->
+        <script src="js/init-app.js"></script>
+        <!-- for your init code, see README and file comments for details -->
+        <script src="xdk/init-dev.js"></script>
+        <!-- normalizes device and document ready events, see file for details -->
+        <script type="application/javascript" src="lib/jquery.min.js"></script>
+        <script type="application/javascript" src="jqm/jquery.mobile-min.js" data-ver="0"></script>
+        <script type="application/javascript" src="bower_components/Materialize/bin/materialize.js"></script>      
+    </head>
+
+    <body>
+        <!-- IMPORTANT: Do not include a weinre script tag as part of your release builds! -->
+        <!-- Place your remote debugging (weinre) script URL from the Test tab here, if it does not work above -->
+        <!-- <script src="http://debug-software.intel.com/target/target-script-min.js#insertabiglongfunkynumberfromthexdkstesttab"></script> -->
+        <div class="upage" id="mainpage" data-role="page">
+            <div class="upage-outer">
+
+                  <div class="navbar-fixed">
+                      <nav class="indigo darken-4">
+                        <div class="nav-wrapper">
+                          <a href="#!" class="brand-logo">Aplicação do XDK</a>
+                          <ul class="right">
+                            <li><a href="#"><i class="material-icons">more_vert</i></a></li>
+                          </ul>
+                        </div>
+                      </nav>
+ 
+                   
+                </div>
+                <div class="upage-content content-area center" id="page_47_89">
+                
+                    <div class="row">
+                        <div class="col s12 indigo darken-2">
+                          <ul class="tabs indigo darken-2">
+                            <li class="tab col s6"><a href="#test1">Usuários</a></li>
+                            <li class="tab col s6"><a href="#test2">Loren ipsum</a></li>
+                          </ul>
+                        </div>
+                        <div id="test1" class="col s12">                        
+                              <ul class="collection">
+                                <li class="collection-item avatar">
+                                    <i class="material-icons left">account_box</i>
+                                    <span class="title">Carolina</span>
+                                    <a href="#test2" class="right botao-view-update"><i class="material-icons" href="1">mode_edit</i></a>
+                                    <a href="#!" class="right botao-delete"><i class="material-icons" href="1">delete</i></a>                                
+                                </li>
+                                <li class="collection-item avatar">
+                                    <i class="material-icons left">account_box</i>
+                                    <span class="title">Marcelo</span>
+                                    <a href="#test2" class="right botao-view-update"><i class="material-icons" href="2">mode_edit</i></a>
+                                    <a href="#!" class="right botao-delete"><i class="material-icons" href="2">delete</i></a>                                
+                                </li>
+                                <li class="collection-item avatar">
+                                    <i class="material-icons left">account_box</i>
+                                    <span class="title">Luiza</span>
+                                    <a href="#test2" class="right botao-view-update"><i class="material-icons" href="3">mode_edit</i></a>
+                                    <a href="#!" class="right botao-delete"><i class="material-icons" href="3">delete</i></a>                                
+                                </li>
+                                <li class="collection-item avatar">
+                                    <i class="material-icons left">account_box</i>
+                                    <span class="title">Leandro</span>
+                                    <a href="#test2" class="right botao-view-update"><i class="material-icons" href="4">mode_edit</i></a>
+                                    <a href="#!" class="right botao-delete"><i class="material-icons" href="4">delete</i></a>                                
+                                </li>                                  
+                              </ul>
+                            <a class="btn-floating btn-large waves-effect waves-light indigo right"><i class="material-icons">add</i></a>
+                        </div>
+                        <div id="test2" class="col s12">
+                            <p> Lorem ipsum dolor sit amet, sapien aliquam mi mi, maecenas lectus turpis egestas, nunc eros mollis, eleifend aliquam proin metus sed tempor pellentesque, sed facilisis inceptos. Non ut libero est. Consectetuer nibh fermentum viverra vitae lobortis etiam, ut nisl a felis in at. Volutpat cras netus diam, tellus pellentesque wisi a aliquam, mus auctor gravida sodales, nec lacus feugiat aptent. Tempus vestibulum, in imperdiet aenean donec vitae massa, feugiat lectus quam sed, nisl mauris commodo. Wisi vitae ipsum ante magna, morbi est fringilla fusce tempor et, sed donec erat placerat purus duis, velit mollis, netus magna. Vivamus pede leo, arcu in, eu magna sem, natoque magna rutrum condimentum perspiciatis cum, ut vel eu sed. Sociis quis quis orci in blandit, nulla pede non.
+                            Deserunt odio id ligula et, quisque arcu, fusce id turpis. Arcu elementum aliquam. Dignissim ac arcu id, fusce lacus. Donec cras morbi. Curabitur suscipit vitae aliquet nec ante. Nam nec risus, suspendisse ullamcorper erat, mollis lacus. Praesent tincidunt. Justo a ultricies viverra nunc nunc quo, ac maecenas et tellus curabitur tincidunt aliquet, pellentesque molestie metus ac justo, nulla orci vulputate vel commodo libero.
+                            Suscipit sodales odio aliquam vulputate aliquet lacus, id nostra. Gravida aenean a nam aenean risus. Mollis tincidunt adipiscing posuere, vitae nunc, ipsum consectetuer nisl per sodales, porta ligula elit turpis nisl quis, erat viverra lobortis. A eros ac sed, ut rutrum nunc ad et enim turpis, lobortis risus, lorem ligula curabitur, cursus tristique interdum nulla ullamcorper. Pretium potenti. Viverra duis. Orci magna parturient cumque enim porta lorem. Neque quis non pretium integer nulla, et ultricies felis dolor, ante ipsum tortor potenti, ut quis egestas mattis penatibus vestibulum, wisi sed magna nonummy at et. A odio mus blandit, ac non nunc blandit pede, quis id nullam scelerisque in interdum. Justo pellentesque libero vitae per tempor, vehicula ultricies dolor neque, nulla dui non id massa lorem nulla, et quam consequat amet pede scelerisque dolor.
+                            </p>
+                        </div>
+                    </div>
+                
+                </div>
+            </div>
+        </div>        
+    </body>
+
+</html>
